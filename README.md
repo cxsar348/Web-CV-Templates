@@ -96,6 +96,13 @@ Before publishing, test the page on desktop and mobile, check every link, and re
 
 The templates take visual inspiration from Nothing's minimalist design language. This is an independent project and is not affiliated with, sponsored by, or endorsed by Nothing.
 
-## License
+## Glyph OS Preview
+<img width="1842" height="916" alt="image" src="https://github.com/user-attachments/assets/2a1626e5-9d51-4047-9198-deb8fe9b16f9" />
 
-No license has been specified yet. Until a license is added, do not assume that the repository grants permission to redistribute or reuse the code.
+## Device Dossier Preview
+<img width="1859" height="908" alt="image" src="https://github.com/user-attachments/assets/d44d22aa-0954-4892-b5c2-7e616c71d758" />
+
+## Career Signal Preview
+<img width="1832" height="913" alt="image" src="https://github.com/user-attachments/assets/72cb5ac8-b35f-43b1-abee-b188c488d3ea" />
+
+
