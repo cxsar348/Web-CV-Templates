@@ -1,58 +1,101 @@
-# CV Profile Templates
+# Web CV Templates
 
-This folder contains three visual templates for presenting a CV as a simple web page. Choose one, replace the example prompts with your own details, and open it in a web browser.
+A collection of three editable, Nothing-inspired web CV templates built with plain HTML, CSS, and JavaScript. Choose the layout that fits your professional story, replace the sample prompts with your information, and open it in a browser.
 
-## Start here
+The design direction is minimal and monochrome, with strong typography, structured layouts, subtle interface details, and a focus on readability.
 
-1. Make a copy of this whole folder first. That gives you a clean original to return to.
-2. Open `index.html` in a web browser to see the three designs.
-3. Pick one:
-   - `glyph-os/index.html` — full profile with experience, skills, projects, education, and contact details.
-   - `device-dossier/index.html` — profile arranged in clickable panels.
-   - `career-signal/index.html` — a scrolling career story with expandable roles.
-4. Open the chosen `index.html` file in a text editor. A code editor such as Visual Studio Code is helpful, but a plain text editor works too.
-5. Use the editor’s Find feature (`Ctrl+F` on Windows/Linux or `Cmd+F` on Mac) to search for `[`. Replace each bracketed prompt with your own information, including the square brackets. Save the file, then refresh the browser page.
+## Templates
 
-## What to edit
+| Template | Layout | Best for |
+| --- | --- | --- |
+| **[Glyph OS](glyph-os/index.html)** | A full profile with summary, experience, skills, projects, education, and contact sections. | A comprehensive professional profile or portfolio. |
+| **[Device Dossier](device-dossier/index.html)** | A modular profile organized into selectable panels and expandable work records. | A compact profile with information grouped into sections. |
+| **[Career Signal](career-signal/index.html)** | A scroll-led career story with expandable roles, a progress indicator, skills, education, and contact details. | Presenting career progression as a visual narrative. |
 
-### Profile
+Start at **[the template gallery](index.html)** to preview and choose a design.
 
-Replace `[FULL NAME]` or `[YOUR NAME]`, `[TARGET ROLE]`, `[CITY, COUNTRY]`, `[AVAILABILITY]`, and similar prompts with the profile owner’s details. The initials `YN` are decorative placeholders; change them to the person’s initials too.
+## Features
 
-### About me
+- Three distinct CV layouts in one repository.
+- Plain HTML, CSS, and JavaScript — no framework, package installation, or build step required.
+- Dark and light theme toggles on the individual templates.
+- Interactive sections, including expandable work experience and selectable panels where applicable.
+- Responsive layouts for different screen sizes.
+- Bracketed prompts and inline comments to guide customization.
+- A separate blank, one-page CV worksheet in PDF format at `glyph-os/curriculum.pdf`.
 
-Look for `[ABOUT ME: ...]`. Write a short introduction of two or three sentences. Mention relevant experience, strengths, and the kind of work the person wants to do. Keep it truthful and specific.
+## Quick start
 
-### Experience
+1. Download or clone this repository.
+2. Open the root `index.html` file in a browser.
+3. Select **Glyph OS**, **Device Dossier**, or **Career Signal**.
+4. Open that template's `index.html` in a text editor.
+5. Replace the bracketed prompts (for example, `[FULL NAME]`, `[JOB TITLE]`, and `[SKILLS CATEGORY]`) with your own details.
+6. Save the file and refresh the browser to review your changes.
 
-Fill in the dates, job title, company, location, and a few achievements for each role. Start achievement descriptions with an action, then explain the result. For more roles, copy the whole role block and paste it nearby:
+No local server is required for basic editing and previewing. A code editor such as Visual Studio Code can make editing easier, but any plain-text editor will work.
 
-- In Glyph OS, copy one `<article class="g-job"> ... </article>` block.
-- In Device Dossier, copy the role’s `<button class="record"> ... </button>` and the `<div class="record-detail"> ... </div>` immediately after it.
-- In Career Signal, copy one `<article class="s-stop"> ... </article>` block.
+## Customize your profile
 
-If copying code feels unfamiliar, keep the number of roles already shown and replace those prompts instead.
+### Personal details and summary
 
-### Skills category
+Search the chosen HTML file for bracketed text. Replace each prompt with accurate information about the profile owner. Write a concise introduction that explains their professional focus, relevant strengths, and the value they bring. Remove optional sections or details that do not apply.
 
-Replace `[SKILLS CATEGORY: ...]` or `[CATEGORY]` with a useful group name, such as Technical Skills, Communication, Leadership, or Tools. Add only skills the person can discuss with a real example. Change the `[Skill / proficiency]` prompts to the actual skills and, where useful, a level of proficiency.
+### Work experience
 
-### Education and contact
+Add dates, role titles, company names, locations, responsibilities, and achievements. Prefer clear action statements and specific outcomes; include numbers only when they are accurate.
 
-Add degrees, certificates, schools, languages, and language levels where they apply. Replace sample email and profile links with the person’s real links. For a link, update both the visible text and its `href` value. For example, change `href="mailto:your.email@example.com"` to the person’s email address. Remove any contact method they do not want to share.
+To add more roles:
 
-## Things to leave alone at first
+- **Glyph OS:** duplicate an `<article class="g-job">...</article>` block.
+- **Device Dossier:** duplicate a `<button class="record">...</button>` and its corresponding `<div class="record-detail">...</div>`.
+- **Career Signal:** duplicate an `<article class="s-stop">...</article>` block.
 
-- `styles.css` controls colors, spacing, and layout.
-- `script.js` controls clickable panels, theme buttons, and animations.
-- `prototypes.css` styles the template selection page.
+### Skills, education, projects, and contact
 
-These files have been formatted to be easier to read, but you do not need to change them to fill in a profile. The comments inside each HTML file point out the main areas to edit.
+Use relevant skill categories and include tools or proficiency levels only when useful. Add education, certifications, languages, and projects that support the professional profile.
 
-## PDF worksheet
+When changing a contact link, update both the visible text and its destination (the `href` attribute). For example, use `mailto:you@example.com` for an email link. Remove any personal contact details you do not want to publish.
 
-`glyph-os/curriculum.pdf` is a blank one-page CV worksheet. It is separate from the web templates, so changing the web page does not automatically change the PDF. Edit or print the worksheet separately if you want a PDF CV.
+### Visual styling and interactions
 
-## Open and share
+- Each template's `styles.css` controls its colors, typography, spacing, and layout.
+- Each template's `script.js` handles its interactive behavior.
+- The root `prototypes.css` styles the template gallery.
 
-After saving your edits, open the chosen HTML file in a browser and review every section. The links between sections work locally. To publish the profile online, upload the chosen template folder and its files together to a web host; keep its `styles.css` and `script.js` beside the HTML file.
+You can personalize the visual style by editing these files, but they are not required for replacing the profile prompts.
+
+## Publish online
+
+To host a template, publish the selected template folder and its files together using a static web host such as GitHub Pages or Cloudflare Pages. Keep its `index.html`, `styles.css`, and `script.js` in their existing relative locations so the page's assets continue to load.
+
+Before publishing, test the page on desktop and mobile, check every link, and remove any prompts or sample contact details.
+
+## Project structure
+
+```text
+.
+├── index.html                 # Gallery for choosing a template
+├── prototypes.css             # Gallery styles
+├── glyph-os/
+│   ├── index.html             # Full professional profile
+│   ├── styles.css
+│   ├── script.js
+│   └── curriculum.pdf          # Blank CV worksheet
+├── device-dossier/
+│   ├── index.html             # Modular profile
+│   ├── styles.css
+│   └── script.js
+└── career-signal/
+    ├── index.html             # Scroll-led career story
+    ├── styles.css
+    └── script.js
+```
+
+## Design note
+
+The templates take visual inspiration from Nothing's minimalist design language. This is an independent project and is not affiliated with, sponsored by, or endorsed by Nothing.
+
+## License
+
+No license has been specified yet. Until a license is added, do not assume that the repository grants permission to redistribute or reuse the code.
