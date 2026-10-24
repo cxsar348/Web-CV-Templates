@@ -14,6 +14,34 @@ The design direction is minimal and monochrome, with strong typography, structur
 
 Start at **[the template gallery](index.html)** to preview and choose a design.
 
+## Screenshots
+
+Add screenshots here to give visitors a visual preview of the templates. Create a `screenshots/` folder in the repository, upload your images using the filenames below, then uncomment the matching Markdown image lines.
+
+**Suggested screenshots**
+
+- `screenshots/template-gallery.png` — the main page showing all three templates.
+- `screenshots/glyph-os.png` — the Glyph OS template.
+- `screenshots/device-dossier.png` — the Device Dossier template.
+- `screenshots/career-signal.png` — the Career Signal template.
+
+When you are ready to display them, remove the HTML comment markers around the relevant lines:
+
+<!--
+![Template gallery](screenshots/template-gallery.png)
+
+### Glyph OS
+![Glyph OS CV template](screenshots/glyph-os.png)
+
+### Device Dossier
+![Device Dossier CV template](screenshots/device-dossier.png)
+
+### Career Signal
+![Career Signal CV template](screenshots/career-signal.png)
+-->
+
+Until you add the images and uncomment these examples, this section will remain text-only and will not show broken image placeholders.
+
 ## Features
 
 - Three distinct CV layouts in one repository.
