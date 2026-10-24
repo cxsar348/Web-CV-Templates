@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090909" />
+    <title>Device Dossier — CV Profile Template</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="prototype theme-dark dossier" data-page="dossier">
+    <div class="prototype-notice">
+      <span>TEMPLATE 02 · DEVICE DOSSIER</span
+      ><span>REPLACE BRACKETED PROMPTS WITH YOUR DETAILS</span
+      ><a href="../index.html">ALL TEMPLATES ↗</a>
+    </div>
+    <header class="d-top">
+      <a class="wordmark" href="../index.html"
+        ><span class="glyph-mark"><i></i><i></i><i></i><i></i></span> PROFILE /
+        DOSSIER</a
+      >
+      <div class="d-top-actions">
+        <span class="serial">[YOUR INITIALS / YEAR]</span
+        ><span class="control">[LANGUAGES]</span
+        ><button class="control" data-theme-toggle>◐</button>
+      </div>
+    </header>
+    <main class="d-shell">
+      <aside class="d-index">
+        <div class="d-id">
+          <span class="id-label">PROFESSIONAL PROFILE</span
+          ><span class="id-big">YN</span
+          ><span class="id-name">[YOUR<br />NAME]</span
+          ><span class="id-status"
+            ><i class="live-dot"></i> [AVAILABILITY]</span
+          >
+        </div>
+        <div class="d-nav-label">CONTENTS</div>
+        <button class="d-tab active" data-tab="d-overview">
+          <span>00</span> Overview <b>↗</b></button
+        ><button class="d-tab" data-tab="d-career">
+          <span>01</span> Experience <b>↗</b></button
+        ><button class="d-tab" data-tab="d-skills">
+          <span>02</span> Capabilities <b>↗</b></button
+        ><button class="d-tab" data-tab="d-education">
+          <span>03</span> Education <b>↗</b></button
+        ><button class="d-tab" data-tab="d-connect">
+          <span>04</span> Contact <b>↗</b>
+        </button>
+        <div class="d-index-foot">
+          <span>PROFILE / <b>01</b></span
+          ><span>[YEAR]</span>
+        </div>
+      </aside>
+      <section class="d-workspace">
+        <div class="d-statusbar">
+          <span>PROFILE SYSTEM <i>● READY</i></span
+          ><span>[PROFESSIONAL FIELD]</span
+          ><a class="button button-red" href="#d-connect">CONTACT ↓</a>
+        </div>
+        <!-- PROFILE / ABOUT ME: Update the name, title, intro, location, and highlight prompts. -->
+        <div class="d-panel active" id="d-overview">
+          <div class="d-panel-title">
+            <span>00 / PROFILE SUMMARY</span><span>01—05</span>
+          </div>
+          <div class="d-overview-grid">
+            <div>
+              <p class="eyebrow">[TARGET ROLE / SPECIALTY]</p>
+              <h1>[YOUR PROFESSIONAL<br /><span>VALUE STATEMENT]</span></h1>
+              <p class="d-lede">
+                [Brief introduction: experience, strengths, and the value you
+                bring.]
+              </p>
+              <div class="d-spec-row">
+                <div><span>EXPERIENCE</span><b>[YEARS]</b></div>
+                <div><span>LOCATION</span><b>[CITY / COUNTRY]</b></div>
+                <div><span>LANGUAGES</span><b>[LANGUAGES]</b></div>
+              </div>
+            </div>
+            <div class="d-device">
+              <div class="device-topline">
+                <span>PROFILE DISPLAY</span><span>YN / 01</span>
+              </div>
+              <div class="device-screen">
+                <div class="dot-field"></div>
+                <div class="device-big">Y<span>N</span></div>
+                <div class="device-screen-foot">
+                  <span>PROFILE<br />ACTIVE</span
+                  ><span class="device-led"></span><span>[KEY<br />FOCUS]</span>
+                </div>
+              </div>
+              <div class="device-controls">
+                <span>●●○○</span><span>[SPECIALTY]</span><span>[YEAR]</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-callout">
+            <span class="callout-marker">!</span><span>SELECTED IMPACT</span
+            ><b>[RESULT / ACHIEVEMENT]</b><span>[CONTEXT]</span>
+          </div>
+          <div class="d-panel-bottom">
+            <span>SELECT A SECTION FROM THE SIDEBAR</span
+            ><span>EDIT PROMPTS TO BUILD YOUR PROFILE</span>
+          </div>
+        </div>
+        <!-- EXPERIENCE: Duplicate a record button and its following record-detail block for another role. -->
+        <div class="d-panel" id="d-career">
+          <div class="d-panel-title">
+            <span>01 / EXPERIENCE</span><span>SELECT A RECORD</span>
+          </div>
+          <h2>Career history</h2>
+          <div class="record-list">
+            <button class="record active" data-record>
+              <span class="record-date">[DATES]</span
+              ><span><b>[JOB TITLE]</b><small>[COMPANY / LOCATION]</small></span
+              ><span class="record-indicator">●</span>
+            </button>
+            <div class="record-detail open">
+              <p>[Responsibilities, achievements, and measurable impact.]</p>
+              <div class="record-tags">
+                <span>[SKILL]</span><span>[RESULT]</span>
+              </div>
+            </div>
+            <button class="record" data-record>
+              <span class="record-date">[DATES]</span
+              ><span
+                ><b>[PREVIOUS JOB TITLE]</b
+                ><small>[COMPANY / LOCATION]</small></span
+              ><span class="record-indicator">○</span>
+            </button>
+            <div class="record-detail">
+              <p>[Responsibilities, achievements, and measurable impact.]</p>
+              <div class="record-tags">
+                <span>[SKILL]</span><span>[RESULT]</span>
+              </div>
+            </div>
+          </div>
+          <p class="d-hint">DUPLICATE A RECORD BLOCK FOR EACH ROLE</p>
+        </div>
+        <!-- SKILLS CATEGORY: Replace each category and list only skills you can support with examples. -->
+        <div class="d-panel" id="d-skills">
+          <div class="d-panel-title">
+            <span>02 / CAPABILITIES</span><span>ADD YOUR STRENGTHS</span>
+          </div>
+          <h2>What you bring.</h2>
+          <div class="d-mod-grid">
+            <article>
+              <span>MODULE A / [CATEGORY]</span><b>[CORE SKILL]</b>
+              <p>[Skills, tools, and methods you use.]</p>
+              <span class="module-leds">● ● ● ○</span>
+            </article>
+            <article>
+              <span>MODULE B / [CATEGORY]</span><b>[CORE SKILL]</b>
+              <p>[Skills, tools, and methods you use.]</p>
+              <span class="module-leds">● ● ● ○</span>
+            </article>
+            <article>
+              <span>MODULE C / [CATEGORY]</span><b>[CORE SKILL]</b>
+              <p>[Skills, tools, and methods you use.]</p>
+              <span class="module-leds">● ● ● ○</span>
+            </article>
+            <article>
+              <span>MODULE D / [CATEGORY]</span><b>[CORE SKILL]</b>
+              <p>[Skills, tools, and methods you use.]</p>
+              <span class="module-leds">● ● ● ○</span>
+            </article>
+          </div>
+        </div>
+        <div class="d-panel" id="d-education">
+          <div class="d-panel-title">
+            <span>03 / EDUCATION &amp; LANGUAGES</span
+            ><span>QUALIFICATIONS</span>
+          </div>
+          <h2>Education and learning.</h2>
+          <div class="d-education-list">
+            <div>
+              <span>[DATES]</span><b>[DEGREE / CERTIFICATION]</b
+              ><small>[SCHOOL / PROVIDER]</small><i>01</i>
+            </div>
+            <div>
+              <span>[DATES]</span><b>[DEGREE / CERTIFICATION]</b
+              ><small>[SCHOOL / PROVIDER]</small><i>02</i>
+            </div>
+          </div>
+          <div class="d-language-strip">
+            <b>[LANGUAGE / LEVEL]</b><b>[LANGUAGE / LEVEL]</b>
+          </div>
+        </div>
+        <div class="d-panel" id="d-connect">
+          <div class="d-panel-title">
+            <span>04 / CONTACT DETAILS</span><span>OPEN CHANNELS</span>
+          </div>
+          <h2>Let’s connect.</h2>
+          <div class="d-ports">
+            <a href="mailto:your.email@example.com"
+              ><span>01</span><b>Email</b><small>[YOUR EMAIL]</small><i>↗</i></a
+            ><a href="#d-connect"
+              ><span>02</span><b>LinkedIn</b><small>[YOUR PROFILE URL]</small
+              ><i>↗</i></a
+            ><a href="#d-connect"
+              ><span>03</span><b>Portfolio</b
+              ><small>[YOUR WEBSITE, OPTIONAL]</small><i>↗</i></a
+            >
+          </div>
+          <div class="d-export-note">
+            ADD ONLY CONTACT DETAILS YOU WANT TO SHARE.
+          </div>
+        </div>
+        <footer class="d-footer">
+          <span>CV PROFILE TEMPLATE</span><span>[YOUR NAME] / [YEAR]</span>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

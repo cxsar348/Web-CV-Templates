@@ -1,45 +1,58 @@
-# Web CV Templates
+# CV Profile Templates
 
-A minimal web CV template inspired by the visual language of **Nothing**: clear typography, monochrome colors, generous spacing, and a focus on the essentials.
+This folder contains three visual templates for presenting a CV as a simple web page. Choose one, replace the example prompts with your own details, and open it in a web browser.
 
-Build a personal online CV that feels considered, readable, and easy to navigate — without unnecessary decoration.
+## Start here
 
-## Design principles
+1. Make a copy of this whole folder first. That gives you a clean original to return to.
+2. Open `index.html` in a web browser to see the three designs.
+3. Pick one:
+   - `glyph-os/index.html` — full profile with experience, skills, projects, education, and contact details.
+   - `device-dossier/index.html` — profile arranged in clickable panels.
+   - `career-signal/index.html` — a scrolling career story with expandable roles.
+4. Open the chosen `index.html` file in a text editor. A code editor such as Visual Studio Code is helpful, but a plain text editor works too.
+5. Use the editor’s Find feature (`Ctrl+F` on Windows/Linux or `Cmd+F` on Mac) to search for `[`. Replace each bracketed prompt with your own information, including the square brackets. Save the file, then refresh the browser page.
 
-- **Minimal by default** — content takes priority over visual effects.
-- **Monochrome palette** — black, white, and restrained neutral tones.
-- **Typography-led layout** — strong hierarchy and readable text.
-- **Clear structure** — make experience, skills, projects, and contact details easy to scan.
-- **Personal, not generic** — adapt the template to your own profile and needs.
+## What to edit
 
-## What is this?
+### Profile
 
-This repository is intended to host a reusable web CV template with a Nothing-inspired aesthetic. Use it as a starting point for presenting your professional profile on the web.
+Replace `[FULL NAME]` or `[YOUR NAME]`, `[TARGET ROLE]`, `[CITY, COUNTRY]`, `[AVAILABILITY]`, and similar prompts with the profile owner’s details. The initials `YN` are decorative placeholders; change them to the person’s initials too.
 
-The visual direction takes inspiration from Nothing's minimalist design language; it is an independent project and is not affiliated with or endorsed by Nothing.
+### About me
 
-## Getting started
+Look for `[ABOUT ME: ...]`. Write a short introduction of two or three sentences. Mention relevant experience, strengths, and the kind of work the person wants to do. Keep it truthful and specific.
 
-The template files and setup instructions will be documented here as the project takes shape.
+### Experience
 
-1. Open the repository and review the available files.
-2. Customize the CV content and visual styles for your profile.
-3. Publish the site using a hosting service that supports your chosen implementation.
+Fill in the dates, job title, company, location, and a few achievements for each role. Start achievement descriptions with an action, then explain the result. For more roles, copy the whole role block and paste it nearby:
 
-## Customization goals
+- In Glyph OS, copy one `<article class="g-job"> ... </article>` block.
+- In Device Dossier, copy the role’s `<button class="record"> ... </button>` and the `<div class="record-detail"> ... </div>` immediately after it.
+- In Career Signal, copy one `<article class="s-stop"> ... </article>` block.
 
-When adapting the template, keep the experience focused:
+If copying code feels unfamiliar, keep the number of roles already shown and replace those prompts instead.
 
-- Use concise descriptions and meaningful section headings.
-- Prioritize readability on desktop and mobile.
-- Keep spacing and alignment consistent.
-- Use accent elements sparingly.
-- Make contact details easy to find.
+### Skills category
 
-## Status
+Replace `[SKILLS CATEGORY: ...]` or `[CATEGORY]` with a useful group name, such as Technical Skills, Communication, Leadership, or Tools. Add only skills the person can discuss with a real example. Change the `[Skill / proficiency]` prompts to the actual skills and, where useful, a level of proficiency.
 
-**Early stage.** This repository currently contains the project description; implementation files and specific setup instructions have not yet been added.
+### Education and contact
 
-## License
+Add degrees, certificates, schools, languages, and language levels where they apply. Replace sample email and profile links with the person’s real links. For a link, update both the visible text and its `href` value. For example, change `href="mailto:your.email@example.com"` to the person’s email address. Remove any contact method they do not want to share.
 
-A license has not yet been specified. Check this section again before reusing or redistributing the project.
+## Things to leave alone at first
+
+- `styles.css` controls colors, spacing, and layout.
+- `script.js` controls clickable panels, theme buttons, and animations.
+- `prototypes.css` styles the template selection page.
+
+These files have been formatted to be easier to read, but you do not need to change them to fill in a profile. The comments inside each HTML file point out the main areas to edit.
+
+## PDF worksheet
+
+`glyph-os/curriculum.pdf` is a blank one-page CV worksheet. It is separate from the web templates, so changing the web page does not automatically change the PDF. Edit or print the worksheet separately if you want a PDF CV.
+
+## Open and share
+
+After saving your edits, open the chosen HTML file in a browser and review every section. The links between sections work locally. To publish the profile online, upload the chosen template folder and its files together to a web host; keep its `styles.css` and `script.js` beside the HTML file.
